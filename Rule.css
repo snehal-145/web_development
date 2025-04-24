@@ -1,0 +1,18 @@
+
+Restaurants { 
+	color: rgb(15, 14, 14); 
+	background-color :  rgb(255, 204, 229);          
+	width: 100%; 
+} 
+heading { 
+	color: rgb(28, 30, 30); 
+	font-size : 40px; 
+	background-color :  rgb(247, 26, 119); 
+} 
+heading, Name, Location, Food, Speciality { 
+	display : flex; 
+} 
+Name { 
+	font-size : 25px; 
+	font-weight : bold; 
+} 
