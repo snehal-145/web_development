@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My Web Folder - Assignments</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(to right, #c9d6ff, #e2e2e2);
+      margin: 0;
+      padding: 30px;
+    }
+
+    .main-folder {
+      background-color: #ffffff;
+      padding: 30px;
+      border-radius: 16px;
+      box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+      width: 80%;
+      max-width: 900px;
+      margin: auto;
+      animation: fadeIn 1s ease-in;
+    }
+
+    .main-title {
+      font-size: 36px;
+      font-weight: bold;
+      color: #2c3e50;
+      margin-bottom: 25px;
+      display: flex;
+      align-items: center;
+    }
+
+    .main-title::before {
+      content: "📁";
+      margin-right: 12px;
+      font-size: 42px;
+    }
+
+    details {
+      background-color: #f0f4ff;
+      border: 2px solid #a3bffa;
+      border-radius: 12px;
+      margin-bottom: 20px;
+      padding: 15px 20px;
+      transition: all 0.3s ease;
+      overflow: hidden;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      color: #000;
+    }
+
+    details:hover {
+      transform: scale(1.02);
+      cursor: pointer;
+    }
+
+    .html-folder {
+      background-image: url('https://cdn-icons-png.flaticon.com/512/732/732212.png'); 
+      background-size: 50px;
+      background-repeat: no-repeat;
+      background-position: right center;
+    }
+
+    .css-folder {
+      background-image: url('https://cdn-icons-png.flaticon.com/512/732/732190.png');
+      background-size: 50px;
+      background-repeat: no-repeat;
+      background-position: right center;
+    }
+
+    .xml-folder {
+      background-image: url('https://cdn-icons-png.flaticon.com/512/136/136526.png'); 
+      background-size: 50px;
+      background-repeat: no-repeat;
+      background-position: right center;
+    }
+
+    summary {
+      font-size: 22px;
+      font-weight: 600;
+      list-style: none;
+      outline: none;
+    }
+
+    summary::before {
+      content: "📂 ";
+      font-size: 28px;
+    }
+
+    .assignment-links {
+      margin-top: 12px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      padding-left: 25px;
+    }
+
+    .assignment-links a {
+      text-decoration: none;
+      color: #0056b3;
+      font-weight: bold;
+      font-size: 18px;
+      transition: color 0.3s, transform 0.2s;
+    }
+
+    .assignment-links a:hover {
+      text-decoration: underline;
+      color: #ff5722;
+      transform: translateX(5px);
+    }
+
+    
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(-20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+<body>
+
+<div class="main-folder">
+  <div class="main-title">My Web Folder</div>
+
+  <details class="html-folder">
+    <summary>HTML Assignment</summary>
+    <div class="assignment-links">
+      <a href="pr_2.html">Assignment 1</a>
+      <a href="pr_3.html">Assignment 2</a>
+      <a href="pr4.html">Assignment 3</a>
+      <a href="pr_5.html">Assignment 4</a>
+      <a href="pr_6.html">Assignment 5</a>
+      <a href="pr_7.html">Assignment 6</a>
+      <a href="pr_8.html">Assignment 7</a>
+      <a href="form1.html">Assignment 8</a>
+      <a href="resume.html">Assignment 9</a>
+    </div>
+  </details>
+
+  <details class="css-folder">
+    <summary>CSS Assignment</summary>
+    <div class="assignment-links">
+      <a href="css_type.html">Internal CSS</a>
+      <a href="external_css.html">External CSS</a>
+      <a href="table_css.html">Table Using CSS</a>
+      <a href="pr_10.html">Resume Using CSS</a>
+      <a href="pr_9.html">Form Using CSS</a>
+
+      
+    </div>
+  </details>
+
+  <details class="xml-folder">
+    <summary>XML Assignments</summary>
+    <div class="assignment-links">
+      <a href="pr_11.xml">XML Assignment</a>
+      <a href="ass_12_output.htm">XSL Assignment</a>
+      <a href="ass_13op.htm">XSLT Assignment</a>
+    </div>
+  </details>
+
+</div>
+
+</body>
+</html>
