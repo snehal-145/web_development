@@ -1,143 +1,173 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Web Development Assignments</title>
+  <meta charset="UTF-8">
+  <title>My Web Folder - Assignments</title>
   <style>
     body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(to right, #c9d6ff, #e2e2e2);
       margin: 0;
-      font-family: 'Segoe UI', sans-serif;
-      background: linear-gradient(180deg, #f4b5b5, #2a2a2a);
-      color: white;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
+      padding: 30px;
     }
 
-    header {
-      width: 100%;
-      padding: 40px 20px;
-      background: #111;
-      box-shadow: 0 5px 15px rgba(215, 211, 211, 0.5);
-      text-align: center;
+    .main-folder {
+      background-color: #ffffff;
+      padding: 30px;
+      border-radius: 16px;
+      box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+      width: 80%;
+      max-width: 900px;
+      margin: auto;
+      animation: fadeIn 1s ease-in;
     }
 
-    h1 {
-      margin: 0;
-      font-size: 2.8rem;
-      color: #03dac6;
-      text-shadow: 2px 2px 8px rgba(0,0,0,0.3);
-    }
-
-    .info {
-      margin: 30px 0;
-      text-align: center;
-    }
-
-    .info h2 {
-      margin: 6px 0;
-      font-weight: 400;
-      color: #100f0f;
-    }
-
-    .info p {
-      color: #2721d7;
-      margin-top: 10px;
-    }
-
-    .assignments {
-      width: 100%;
-      max-width: 600px;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      padding: 20px;
-      gap: 20px;
-    }
-
-    .card {
-      background: #222;
-      padding: 20px;
-      width: 100%;
-      border-radius: 15px;
-      box-shadow: 0 6px 20px rgba(242, 63, 102, 0.6);
-      transition: transform 0.3s, background 0.3s;
-      text-align: center;
-    }
-
-    .card:hover {
-      transform: scale(1.03);
-      background: #017d7b;
-    }
-
-    .card p {
-      font-size: 1.2rem;
-      margin-bottom: 8px;
-      color: #f5f5f5;
-    }
-
-    .card a {
-      display: inline-block;
-      margin-top: 8px;
-      color: #03dac6;
+    .main-title {
+      font-size: 36px;
       font-weight: bold;
-      text-decoration: none;
-      padding: 6px 14px;
-      border: 1px solid #03dac6;
-      border-radius: 20px;
+      color: #2c3e50;
+      margin-bottom: 25px;
+      display: flex;
+      align-items: center;
+    }
+
+    .main-title::before {
+      content: "📁";
+      margin-right: 12px;
+      font-size: 42px;
+    }
+
+    details {
+      background-color: #f0f4ff;
+      border: 2px solid #a3bffa;
+      border-radius: 12px;
+      margin-bottom: 20px;
+      padding: 15px 20px;
       transition: all 0.3s ease;
+      overflow: hidden;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      color: #000;
     }
 
-    .card a:hover {
-      background: #03dac6;
-      color: #847b7b;
+    details:hover {
+      transform: scale(1.02);
+      cursor: pointer;
     }
 
-  
+    .html-folder {
+      background-image: url('https://cdn-icons-png.flaticon.com/512/732/732212.png'); 
+      background-size: 50px;
+      background-repeat: no-repeat;
+      background-position: right center;
+    }
 
-    @media (max-width: 500px) {
-      h1 {
-        font-size: 2rem;
+    .css-folder {
+      background-image: url('https://cdn-icons-png.flaticon.com/512/732/732190.png');
+      background-size: 50px;
+      background-repeat: no-repeat;
+      background-position: right center;
+    }
+
+    .xml-folder {
+      background-image: url('https://cdn-icons-png.flaticon.com/512/136/136526.png'); 
+      background-size: 50px;
+      background-repeat: no-repeat;
+      background-position: right center;
+    }
+
+    summary {
+      font-size: 22px;
+      font-weight: 600;
+      list-style: none;
+      outline: none;
+    }
+
+    summary::before {
+      content: "📂 ";
+      font-size: 28px;
+    }
+
+    .assignment-links {
+      margin-top: 12px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      padding-left: 25px;
+    }
+
+    .assignment-links a {
+      text-decoration: none;
+      color: #0056b3;
+      font-weight: bold;
+      font-size: 18px;
+      transition: color 0.3s, transform 0.2s;
+    }
+
+    .assignment-links a:hover {
+      text-decoration: underline;
+      color: #ff5722;
+      transform: translateX(5px);
+    }
+
+    
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(-20px);
       }
-
-      .card {
-        padding: 16px;
-      }
-
-      .card p {
-        font-size: 1rem;
+      to {
+        opacity: 1;
+        transform: translateY(0);
       }
     }
   </style>
 </head>
-
 <body>
-  <header>
-    <h1>Web Development Assignments</h1>
-  </header>
 
-  <div class="info">
-    <h2>Name: Snehal Sunil Wagavekar</h2>
-    <h2>Roll No: 141</h2>
-    <p>Below are the Assignments of Web Development</p>
-  </div>
+<div class="main-folder">
+  <div class="main-title">My Web Folder</div>
 
-  <section class="assignments">
-    <div class="card"><p>Assignment 1</p><a href="pr_2.html" target="_blank">Click Here</a></div>
-    <div class="card"><p>Assignment 2</p><a href="pr4.html" target="_blank">Click Here</a></div>
-    <div class="card"><p>Assignment 3</p><a href="pr_3.html" target="_blank">Click Here</a></div>
-    <div class="card"><p>Assignment 4</p><a href="pr_4.html" target="_blank">Click Here</a></div>
-    <div class="card"><p>Assignment 5</p><a href="pr_5.html" target="_blank">Click Here</a></div>
-    <div class="card"><p>Assignment 6</p><a href="pr_6.html" target="_blank">Click Here</a></div>
-    <div class="card"><p>Assignment 7</p><a href="pr_7.html" target="_blank">Click Here</a></div>
-    <div class="card"><p>Assignment 8</p><a href="pr_8.html" target="_blank">Click Here</a></div>
-    <div class="card"><p>Assignment 9</p><a href="pr_9.html" target="_blank">Click Here</a></div>
-    <div class="card"><p>Assignment 10</p><a href="pr_10.html" target="_blank">Click Here</a></div>
-    <div class="card"><p>Assignment 11</p><a href="pr_11.xml" target="_blank">Click Here</a></div>
-    <div class="card"><p>Assignment 12</p><a href="pr_12.htm" target="_blank">Click Here</a></div>
-  </section>
+  <details class="html-folder">
+    <summary>HTML Assignment</summary>
+    <div class="assignment-links">
+      <a href="pr_2.html">Assignment 1</a>
+      <a href="pr_3.html">Assignment 2</a>
+      <a href="pr4.html">Assignment 3</a>
+      <a href="pr4.html">Assignment 4</a>
+      <a href="pr_5.html">Assignment 5</a>
+      <a href="pr_6.html">Assignment 6</a>
+      <a href="pr_7.html">Assignment 7</a>
+      <a href="pr_8.html">Assignment 8</a>
+      <a href="form1.html">Assignment 9</a>
+      <a href="resume.html">Assignment 10</a>
+    </div>
+  </details>
 
-  
+  <details class="css-folder">
+    <summary>CSS Assignment</summary>
+    <div class="assignment-links">
+      <a href="css_type.html">Internal CSS</a>
+      <a href="external_css.html">External CSS</a>
+      <a href="table_css.html">Table Using CSS</a>
+      <a href="pr_10.html">Resume Using CSS</a>
+      <a href="pr_9.html">Form Using CSS</a>
+
+      
+    </div>
+  </details>
+
+  <details class="xml-folder">
+    <summary>XML Assignments</summary>
+    <div class="assignment-links">
+      <a href="pr_11.xml">XML Assignment</a>
+      <a href="ass_12_output.htm">XSL Assignment</a>
+      <a href="ass_13op.htm">XSLT Assignment</a>
+    </div>
+  </details>
+
+</div>
+
 </body>
 </html>
